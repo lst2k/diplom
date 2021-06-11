@@ -1,0 +1,33 @@
+{
+  "name": "graphic-studio",
+  "version": "2.0.0",
+  "description": "graphic-studio diploma",
+  "main": "prod-build/index.html",
+  "keywords": [
+    "parcel",
+    "react",
+    "redux",
+    "styled-components"
+  ],
+  "author": "Anton Levadny <>",
+  "license": "ISC",
+  "scripts": {
+    "dev": "parcel -p 5000 src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "styled-components": "^5.3.0",
+    "styled-normalize": "^8.0.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "parcel": "^2.0.0-beta.3.1"
+  }
+}
