@@ -1,27 +1,8 @@
 import {createGlobalStyle} from 'styled-components'
 import {normalize} from 'styled-normalize'
 
-// noinspection SpellCheckingInspection
-import FuturaNormal from 'url:./fonts/TT0140M_.TTF'
-// noinspection SpellCheckingInspection
-import FuturaBold from 'url:./fonts/TT0144M_.TTF'
 
-
-const GlobalStyles = createGlobalStyle`
-  @font-face {
-    font-family: 'Futura';
-    src: url(${FuturaNormal}) format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Futura';
-    src: url(${FuturaBold}) format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
-
+export const GlobalStyles = createGlobalStyle`
   ${normalize}
   html {
     box-sizing: border-box;
@@ -66,11 +47,9 @@ const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
     position: relative;
     color: ${props => props.theme.colors.basicTextColor};
-    font-family: 'Futura', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.2;
   }
 `
-
-export {GlobalStyles}

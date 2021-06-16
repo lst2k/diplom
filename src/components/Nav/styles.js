@@ -11,10 +11,41 @@ export const Navigation = styled.nav`
   }
 `
 
-export const Logo = styled.div`
+export const Logo = styled.span`
   cursor: pointer;
+  line-height: 0;
 `
 
 export const Menu = styled.div`
+  display: flex;
+  margin-left: 60px;
+  > * + * {
+    margin-left: 40px;
+  }
+`
 
+export const DropDownImg = styled.span`
+  margin-left: 6px;
+`
+
+export const MenuItem = styled.div`
+  transition: color 0.15s;
+  color: ${props => props.active ? '#fff' : null};
+  &:hover {
+    color: #fff;
+  }
+  > * {
+    display: flex;
+    align-items: center;
+  }
+`
+
+export const SocialMediaContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: 36px;
+  margin-left: auto;
+  > * + * {
+    margin-left: 30px;
+  }
 `

@@ -10,18 +10,18 @@ export const Button = styled.button`
   transition: all 0.15s;
   color: #fff;
   ${props => props.type === 'empty' ? css`
-    border: 2px solid #FFFFFF;
+    border: 2px solid ${props.borderColor ? props.borderColor : '#fff'};
     background: transparent;
     &:hover {
-      border-color: ${props => props.theme.colors.primary};
-      color: ${props => props.theme.colors.primary};
+      border-color: ${props.borderColor ? '#fff' : props.theme.colors.primary};
+      color: ${props.theme.colors.primary};
     }
   ` : null};
   ${props => props.type === 'filled' ? css`
     border: 2px solid transparent;
-    background: ${props => props.theme.colors.primary};
+    background: ${props.theme.colors.primary};
     &:hover {
-      background: rgba(95,71,202, 0.9);
+      background: rgba(95,71,202, 0.8);
     }
   ` : null};
 `

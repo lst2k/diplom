@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import {SIZES} from './constants'
+import {MEDIA_QUERIES} from '../../constants/mediaQueriesList'
 
 
 const Typography = styled.div`
@@ -11,20 +12,19 @@ const Typography = styled.div`
   font-family: ${props => props.fontFamily ? props.fontFamily : null};
   
   ${props => {
-    return `@media ${props.theme.media.xl}{
+    return `${MEDIA_QUERIES.xl}{
       font-size: ${SIZES[props.size].md}
     }`
   }}
   ${props => {
-    return `@media ${props.theme.media.sm}{
+    return `${MEDIA_QUERIES.sm}{
       font-size: ${SIZES[props.size].sm}
     }`
   }}
 `
 
 Typography.defaultProps = {
-  textColor: `${props => props.theme.colors.black}`,
-  size: '2',
+  size: 2,
   lineHeight: '1.2',
   fontWeight: '400',
 }
