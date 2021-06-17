@@ -1,18 +1,15 @@
 # Graphic-studio - diploma work
 
-> ✨ Created with snowpack.
+> ✨ Created with next.js
 
-## Available Scripts
+## Getting Started
 
-### npm run dev
+First, run the development server:
 
-Runs the app in the development mode.
-Open http://localhost:5000 to view it in the browser.
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
-
-### npm run build
-
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

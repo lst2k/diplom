@@ -1,23 +1,27 @@
 {
   "name": "graphic-studio",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "graphic-studio diploma",
   "author": "Anton Levadny <>",
-  "license": "ISC",
+  "private": true,
   "scripts": {
-    "dev": "snowpack dev",
-    "build": "snowpack build"
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "next": "11.0.0",
+    "next-compose-plugins": "^2.2.1",
+    "next-images": "^1.7.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.3.0",
-    "styled-normalize": "^8.0.7"
+    "styled-normalize": "^8.0.7",
+    "swiper": "^6.7.0"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.13.13",
-    "@snowpack/plugin-babel": "^2.1.7",
-    "snowpack": "^3.3.7"
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "babel-plugin-styled-components": "^1.12.0"
   }
 }

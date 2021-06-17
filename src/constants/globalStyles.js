@@ -1,6 +1,8 @@
 import {createGlobalStyle} from 'styled-components'
 import {normalize} from 'styled-normalize'
 
+import {mainColors} from './theme'
+
 
 export const GlobalStyles = createGlobalStyle`
   ${normalize}
@@ -46,7 +48,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     overflow-x: hidden;
     position: relative;
-    color: ${props => props.theme.colors.basicTextColor};
+    color: ${mainColors.basicTextColor};
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;

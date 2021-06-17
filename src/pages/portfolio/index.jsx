@@ -1,16 +1,18 @@
-import React from 'react'
-
+import * as Styles from '../../styles/portfolioPageStyles'
+import Seo from '../../components/Seo'
 import Layout from '../../layout'
-import * as Styles from './styles'
 
 
 const PortfolioPage = () => {
   return (
-    <Layout>
-      <Styles.PortfolioPageContainer>
-        CONTACTS
-      </Styles.PortfolioPageContainer>
-    </Layout>
+    <>
+      <Seo />
+      <Layout>
+        <Styles.PortfolioPageContainer>
+          CONTACTS
+        </Styles.PortfolioPageContainer>
+      </Layout>
+    </>
   )
 }
 

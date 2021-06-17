@@ -9,7 +9,6 @@ const HeroSection = () => {
     <Styles.HeroSection>
       <BaseContainer>
 
-
       </BaseContainer>
     </Styles.HeroSection>
   )

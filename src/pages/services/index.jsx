@@ -1,16 +1,18 @@
-import React from 'react'
-
+import * as Styles from '../../styles/servicesPageStyles'
 import Layout from '../../layout'
-import * as Styles from './styles'
+import Seo from '../../components/Seo'
 
 
 const ServicesPage = () => {
   return (
-    <Layout>
-      <Styles.ServicesPageContainer>
-        CONTACTS
-      </Styles.ServicesPageContainer>
-    </Layout>
+    <>
+      <Seo />
+      <Layout>
+        <Styles.ServicesPageContainer>
+          CONTACTS
+        </Styles.ServicesPageContainer>
+      </Layout>
+    </>
   )
 }
 

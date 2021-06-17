@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
+import {mainColors} from '../../constants/theme'
+
 
 export const Footer = styled.footer`
   height: 120px;
-  background-color: ${props => props.theme.colors.darkBG};
+  background-color: ${mainColors.darkBG};
 `

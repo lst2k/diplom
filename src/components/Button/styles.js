@@ -1,5 +1,7 @@
 import styled, {css} from 'styled-components'
 
+import {mainColors} from '../../constants/theme'
+
 
 export const Button = styled.button`
   cursor: pointer;
@@ -13,13 +15,13 @@ export const Button = styled.button`
     border: 2px solid ${props.borderColor ? props.borderColor : '#fff'};
     background: transparent;
     &:hover {
-      border-color: ${props.borderColor ? '#fff' : props.theme.colors.primary};
-      color: ${props.theme.colors.primary};
+      border-color: ${props.borderColor ? '#fff' : mainColors.primary};
+      color: ${mainColors.primary};
     }
   ` : null};
   ${props => props.type === 'filled' ? css`
     border: 2px solid transparent;
-    background: ${props.theme.colors.primary};
+    background: ${mainColors.primary};
     &:hover {
       background: rgba(95,71,202, 0.8);
     }
@@ -43,11 +45,11 @@ export const ArrowButton = styled.button`
     transform: rotate(${props => props.rotate ? props.rotate : '0'}deg);
   }
   &:hover {
-    border-color: ${props => props.theme.colors.primary};
-    color: ${props => props.theme.colors.primary};
+    border-color: ${mainColors.primary};
+    color: ${mainColors.primary};
     > svg {
       > path {
-        fill: ${props => props.theme.colors.primary};
+        fill: ${mainColors.primary};
       }
     }
   }

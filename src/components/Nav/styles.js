@@ -1,9 +1,11 @@
 import styled from 'styled-components'
 
+import {mainColors} from '../../constants/theme'
+
 
 export const Navigation = styled.nav`
   padding: 30px 0;
-  background-color: ${props => props.theme.colors.darkBG};
+  background-color: ${mainColors.darkBG};
   > * {
     display: flex;
     align-items: center;
