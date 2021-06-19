@@ -4,8 +4,8 @@ const withImages = require('next-images')
 
 module.exports = withPlugins(
   [withImages], {
-    // images: {
-    //   disableStaticImages: true
-    // },
+    images: {
+      disableStaticImages: true
+    },
   }
 )

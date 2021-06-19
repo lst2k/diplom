@@ -3,7 +3,6 @@ import BaseContainer from '../../../components/BaseContainer'
 import Typography from '../../../components/Typography'
 import Button from '../../../components/Button'
 
-import {mainColors} from '../../../constants/theme'
 
 import Arrow from '../../../images/arrow.svg'
 
