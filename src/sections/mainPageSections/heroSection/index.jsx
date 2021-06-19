@@ -1,5 +1,3 @@
-import React from 'react'
-
 import * as Styles from './styles'
 import BaseContainer from '../../../components/BaseContainer'
 import Typography from '../../../components/Typography'

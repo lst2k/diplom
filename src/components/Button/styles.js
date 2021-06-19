@@ -35,12 +35,14 @@ Button.defaultProps = {
 export const ArrowButton = styled.button`
   cursor: pointer;
   border: 2px solid #fff;
-  display: inline-block;
   outline: none;
   background-color: transparent;
   border-radius: 6px;
   transition: all 0.15s;
-  padding: 6px 10px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   > svg {
     transform: rotate(${props => props.rotate ? props.rotate : '0'}deg);
   }
