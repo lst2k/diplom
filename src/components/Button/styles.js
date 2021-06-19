@@ -15,7 +15,7 @@ export const Button = styled.button`
     border: 2px solid ${props.borderColor ? props.borderColor : '#fff'};
     background: transparent;
     &:hover {
-      border-color: ${props.borderColor ? '#fff' : mainColors.primary};
+      border-color: ${mainColors.primary};
       color: ${mainColors.primary};
     }
   ` : null};

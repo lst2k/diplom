@@ -21,6 +21,10 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+  
+  p {
+    margin: 0;
+  }
 
   ul,
   li {
