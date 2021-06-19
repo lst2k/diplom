@@ -34,7 +34,7 @@ Button.defaultProps = {
 
 export const ArrowButton = styled.button`
   cursor: pointer;
-  border: 2px solid #fff;
+  border: 2px solid ${props => props.borderColor ? props.borderColor : '#fff'};
   outline: none;
   background-color: transparent;
   border-radius: 6px;
@@ -44,12 +44,17 @@ export const ArrowButton = styled.button`
   align-items: center;
   justify-content: center;
   > svg {
+    transition: all 0.15s;
     transform: rotate(${props => props.rotate ? props.rotate : '0'}deg);
+    > path {
+      fill: ${props => props.borderColor ? props.borderColor : '#fff'};
+    }
   }
   &:hover {
     border-color: ${mainColors.primary};
     color: ${mainColors.primary};
     > svg {
+      transition: all 0.15s;
       > path {
         fill: ${mainColors.primary};
       }

@@ -10,7 +10,7 @@ const Seo = (props) => {
       <meta name="description" content="" />
       <meta name="keywords" content="" />
       <meta name="theme-color" content="#141416" />
-      <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
     </Head>

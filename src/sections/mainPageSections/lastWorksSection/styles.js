@@ -4,7 +4,7 @@ import {mainColors} from '../../../constants/theme'
 
 
 export const LastWorksSection = styled.div`
-  padding: 60px 0;
+  padding: 120px 0;
   background-color: ${mainColors.darkBG};
 
   > * {
