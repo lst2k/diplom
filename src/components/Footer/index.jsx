@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <Styles.Footer>
       <BaseContainer>
-        FOOTER
       </BaseContainer>
     </Styles.Footer>
   )

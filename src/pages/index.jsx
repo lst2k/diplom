@@ -6,6 +6,7 @@ import Layout from '../layout'
 import AdvantagesSection from '../sections/mainPageSections/advantagesSection'
 import LastWorksSection from '../sections/mainPageSections/lastWorksSection'
 import ReviewsSection from '../sections/mainPageSections/reviewsSection'
+import ContactSection from '../sections/mainPageSections/contactSection'
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
           <AdvantagesSection />
           <LastWorksSection />
           <ReviewsSection />
+          <ContactSection />
         </Styles.HomePageContainer>
       </Layout>
     </>

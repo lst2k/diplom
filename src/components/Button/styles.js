@@ -13,7 +13,7 @@ export const Button = styled.button`
   color: #fff;
   ${props => props.type === 'empty' ? css`
     border: 2px solid ${props.borderColor ? props.borderColor : '#fff'};
-    background: transparent;
+    background-color: transparent;
     &:hover {
       border-color: ${mainColors.primary};
       color: ${mainColors.primary};
@@ -21,9 +21,14 @@ export const Button = styled.button`
   ` : null};
   ${props => props.type === 'filled' ? css`
     border: 2px solid transparent;
-    background: ${mainColors.primary};
+    background-color: ${mainColors.primary};
+
     &:hover {
-      background: rgba(95,71,202, 0.8);
+      background-color: rgba(95, 71, 202, 0.8);
+    }
+
+    &:active {
+      background-color: rgb(82, 56, 206);
     }
   ` : null};
 `

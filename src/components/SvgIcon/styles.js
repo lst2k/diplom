@@ -7,7 +7,7 @@ export const SvgIcon = styled.span`
   cursor: pointer;
   > * path {
     transition: all 0.15s;
-    fill: ${mainColors.basicTextColor};
+    fill: ${props => props.defaultFill ? props.defaultFill : mainColors.basicTextColor};
   }
   :hover {
     > * path {
