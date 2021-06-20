@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import * as Styles from './styles'
 import BaseContainer from '../../../components/BaseContainer'
 import Typography from '../../../components/Typography'
@@ -22,7 +24,11 @@ const HeroSection = () => {
 
           <Styles.Buttons>
             <Button>Подробнее</Button>
-            <Button type={'empty'} borderColor={mainColors.primary}>Портфолио</Button>
+            <Link href={'/portfolio'}>
+              <a>
+                <Button type={'empty'} borderColor={mainColors.primary}>Портфолио</Button>
+              </a>
+            </Link>
           </Styles.Buttons>
         </Styles.IntroText>
 

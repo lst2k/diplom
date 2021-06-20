@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import * as Styles from './styles'
 import BaseContainer from '../../../components/BaseContainer'
 import Typography from '../../../components/Typography'
@@ -16,7 +18,10 @@ const LastWorksSection = () => {
             Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor incididunt ut labore
           </Typography>
-          <Button>Посмотреть все</Button>
+
+          <Link href={'/portfolio'}>
+            <a><Button>Посмотреть все</Button></a>
+          </Link>
         </Styles.InfoSection>
 
         <Styles.WorksContainer>

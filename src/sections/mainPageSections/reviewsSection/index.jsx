@@ -37,7 +37,11 @@ const ReviewsSection = () => {
               swiper.navigation.init()
               swiper.navigation.update()
             }}
-            slidesPerView={3} spaceBetween={24} freeMode={true}>
+            navigation={{
+              prevEl: prev.current,
+              nextEl: next.current
+            }}
+            slidesPerView={4} spaceBetween={24}>
             <SwiperSlide>
               <Styles.ReviewCard>
                 <Styles.ReviewHeader>

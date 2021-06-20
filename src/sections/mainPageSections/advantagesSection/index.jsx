@@ -5,7 +5,7 @@ import BaseContainer from '../../../components/BaseContainer'
 import Typography from '../../../components/Typography'
 import Button from '../../../components/Button'
 
-import LinkedIn from '../../../images/clients/linkedIn.svg'
+import linkedIn from '../../../images/clients/linkedIn.png'
 import Instagram from '../../../images/social-icons/instagram.svg'
 import Telegram from '../../../images/social-icons/telegram.svg'
 import SvgIcon from '../../../components/SvgIcon'
@@ -106,7 +106,7 @@ const AdvantagesSection = () => {
                 Наши клиенты
               </Typography>
             <Styles.ClientsLogos>
-              {Array.from(Array(12).keys()).map((item, index) => <LinkedIn key={index} />)}
+              {Array.from(Array(12).keys()).map((item, index) => <img key={index} src={linkedIn} alt={''} />)}
             </Styles.ClientsLogos>
           </Styles.SlideClients>
 

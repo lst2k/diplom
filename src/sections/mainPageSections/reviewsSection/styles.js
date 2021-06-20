@@ -4,9 +4,6 @@ import {mainColors} from '../../../constants/theme'
 
 
 export const ReviewsSection = styled.div`
-  background-image: url('/line.svg');
-  background-position: center;
-  background-repeat: no-repeat;
   background-color: ${mainColors.lightBG};
   padding: 120px 0;
 
@@ -47,10 +44,14 @@ export const Slider = styled.div`
   cursor: grab;
   padding-top: 60px;
   width: 100vw;
+  background-image: url('/line.svg');
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: contain;
   > * {
     > * {
       > * {
-        width: unset !important;
+        width: 320px !important;
       }
     }
   }

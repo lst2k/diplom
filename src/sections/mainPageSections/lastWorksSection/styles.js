@@ -19,6 +19,7 @@ export const InfoSection = styled.div`
 
   > * + * {
     margin-top: 40px;
+    display: block;
   }
 `
 

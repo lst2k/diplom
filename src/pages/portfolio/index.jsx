@@ -1,6 +1,7 @@
 import * as Styles from '../../styles/portfolioPageStyles'
 import Seo from '../../components/Seo'
 import Layout from '../../layout'
+import PortfolioFormSection from '../../sections/portfolioPageSections/portfolioFormSection'
 
 
 const PortfolioPage = () => {
@@ -9,7 +10,7 @@ const PortfolioPage = () => {
       <Seo />
       <Layout>
         <Styles.PortfolioPageContainer>
-          CONTACTS
+          <PortfolioFormSection />
         </Styles.PortfolioPageContainer>
       </Layout>
     </>

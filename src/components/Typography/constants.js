@@ -15,8 +15,8 @@ export const SIZES = {
     default: '18px'
   },
   4: {
-    sm: '16px',
-    md: '18px',
+    sm: '24px',
+    md: '28px',
     default: '36px'
   },
   5: {
