@@ -3,7 +3,7 @@ import React from 'react'
 import * as Styles from './styles'
 
 
-const Button =  React.forwardRef((props, ref) => {
+const Button = React.forwardRef((props, ref) => {
   return (
     props.type === 'arrow' ?
       (

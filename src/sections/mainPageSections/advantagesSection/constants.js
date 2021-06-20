@@ -1,0 +1,6 @@
+export const slidesContent  = [
+  {
+    title: '',
+
+  }
+]

@@ -16,26 +16,6 @@ import Email from '../../images/social-icons/email.svg'
 
 
 const Nav = () => {
-  const menuItems = [
-    {
-      url: '/',
-      title: 'Главная страница'
-    },
-    {
-      url: '/services',
-      title: 'Наши услуги',
-      dropDown: <SvgIcon><DropDownImg /></SvgIcon>
-    },
-    {
-      url: '/portfolio',
-      title: 'Портфолио'
-    },
-    {
-      url: '/contacts',
-      title: 'Контакты'
-    }
-  ]
-
   let router = useRouter()
 
   const handleClick = () => {
@@ -48,22 +28,6 @@ const Nav = () => {
         <Styles.Logo onClick={handleClick}>
           <Logo />
         </Styles.Logo>
-
-        <Styles.Menu>
-          {menuItems.map((item, index) => (
-            <Styles.MenuItem key={`${index}-${item.title}`} active={router.pathname === item.url}>
-              <Link href={item.url}>
-                <a>
-                  <Typography>{item.title}</Typography>
-                  {item.dropDown &&
-                  <Styles.DropDownImg>{item.dropDown}</Styles.DropDownImg>
-                  }
-                </a>
-              </Link>
-            </Styles.MenuItem>
-          ))}
-        </Styles.Menu>
-
 
         <Styles.SocialMediaContainer>
           <SvgIcon fill={'#DF3939'}>
