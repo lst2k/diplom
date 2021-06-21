@@ -7,6 +7,8 @@ export const PortfolioFormSection = styled.div`
   background-color: ${mainColors.darkBG};
   padding: 40px 0;
   height: 80vh;
+  position: relative;
+
   > * {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -136,3 +138,69 @@ export const OpenButton = styled.span`
   }
 `
 
+
+// WORK DETAILS
+
+export const WorkDetails = styled.div`
+  position: fixed;
+  top: 80px;
+  bottom: 80px;
+  max-width: 1170px;
+  max-height: 100%;
+  z-index: 10;
+  display: ${props => props.open ? 'flex' : 'none'};
+  overflow-y: scroll;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  
+  ::-webkit-scrollbar {
+   display: none;
+  }
+`
+
+export const ShowCase = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  justify-items: stretch;
+  width: 100%;
+  > * {
+    :nth-child(1) {
+      grid-column: 1/2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+      align-items: stretch;
+      > * {
+        width: 100%;
+        :nth-child(1) {
+          grid-column: 1/3;
+        }
+      }
+    }
+    :nth-child(2) {
+      background-color: ${mainColors.primary};
+    }
+  }
+`
+
+export const ClosePopupButton = styled.span`
+  position: absolute;
+  right: -26px;
+  top: 60px;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg);
+  column-gap: 10px;
+  cursor: pointer;
+`
+
+export const ProjectName = styled.span`
+  position: absolute;
+  bottom: 100px;
+  right: -50px;
+  transform: rotate(90deg);
+  z-index: 11;
+`

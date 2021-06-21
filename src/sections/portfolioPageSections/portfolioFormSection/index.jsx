@@ -1,15 +1,49 @@
-import {useState} from 'react'
+import {useState, useRef} from 'react'
 
 import * as Styles from './styles'
 import BaseContainer from '../../../components/BaseContainer'
 import {setActivityState} from '../../../utils/objectLoop'
 import Typography from '../../../components/Typography'
 import {works} from './constants'
+import useOutsideClick from '../../../hooks/clickOutside'
+
+import CloseIcon from '../../../images/close.svg'
+
+
+const WorkDetailsPopup = (props) => {
+  const closeWorkDetails = useRef('')
+  useOutsideClick(closeWorkDetails, () => props.setOpen(false))
+
+  return (
+    <Styles.WorkDetails open={props.open} ref={closeWorkDetails}>
+
+      <Styles.ClosePopupButton onClick={() => props.setOpen(false)}>
+        <CloseIcon />
+        <Typography textColor={'#fff'} fontWeight={'600'}>Закрыть</Typography>
+      </Styles.ClosePopupButton>
+
+      <Styles.ProjectName>
+        <Typography textColor={'#fff'} fontWeight={'600'}>Название проекта</Typography>
+      </Styles.ProjectName>
+
+      <Styles.ShowCase>
+        <div>
+          {props.imagesArray.map((image, index) => (
+            <img key={index} src={image} alt={''} />
+          ))}
+        </div>
+        <div />
+      </Styles.ShowCase>
+    </Styles.WorkDetails>
+  )
+}
 
 
 const PortfolioFormSection = () => {
 
-  //const [allWorks, setAllWorks] = useState(works)
+  const [portfolioImages, setPortfolioImages] = useState([])
+  const [open, setOpen] = useState(false)
+
   const [filteredWorks, setFilteredWorks] = useState(works)
 
   const [selected, setSelected] = useState({
@@ -32,9 +66,15 @@ const PortfolioFormSection = () => {
     }
   }
 
+  const openPortfolioWork = (images) => {
+    setOpen(true)
+    setPortfolioImages(images)
+  }
+
 
   return (
     <Styles.PortfolioFormSection>
+      <WorkDetailsPopup open={open} setOpen={setOpen} imagesArray={portfolioImages} />
       <BaseContainer>
         <Styles.FiltersContainer>
           <Styles.MainFilterOption selected={selected.all} onClick={() => filterHandler('all')}>Все работы</Styles.MainFilterOption>
@@ -54,11 +94,13 @@ const PortfolioFormSection = () => {
 
         <Styles.WorksContainer>
           {filteredWorks.map((work, index) => (
-            <Styles.Work key={index} category={work.category}>
-              <img src={work.image} alt={''} />
-              <Styles.OpenButton>Открыть</Styles.OpenButton>
-              <Typography fontWeight={'700'} textColor={'#fff'}>{work.name}</Typography>
-            </Styles.Work>
+            <>
+              <Styles.Work key={index}>
+                <img src={work.image} alt={''} />
+                <Styles.OpenButton onClick={() => openPortfolioWork(work.showCase)}>Открыть</Styles.OpenButton>
+                <Typography fontWeight={'700'} textColor={'#fff'}>{work.name}</Typography>
+              </Styles.Work>
+            </>
           ))}
         </Styles.WorksContainer>
       </BaseContainer>
