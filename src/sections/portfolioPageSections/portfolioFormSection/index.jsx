@@ -94,9 +94,9 @@ const PortfolioFormSection = () => {
 
         <Styles.WorksContainer>
           {filteredWorks.map((work, index) => (
-            <Styles.Work key={index}>
+            <Styles.Work key={index} onClick={() => openPortfolioWork(work.showCase)}>
               <img src={work.image} alt={''} />
-              <Styles.OpenButton onClick={() => openPortfolioWork(work.showCase)}>Открыть</Styles.OpenButton>
+              <Styles.OpenButton>Открыть</Styles.OpenButton>
               <Typography fontWeight={'700'} textColor={'#fff'}>{work.name}</Typography>
             </Styles.Work>
           ))}

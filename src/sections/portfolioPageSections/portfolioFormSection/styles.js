@@ -91,7 +91,7 @@ export const Work = styled.div`
 
   > img {
     display: block;
-    transition: transform .15s;
+    transition: transform .3s;
   }
 
   :hover {
@@ -106,7 +106,7 @@ export const Work = styled.div`
     }
 
     ::after {
-      transition: 0.15s;
+      transition: 0.3s;
       background-size: 100% 100%;
     }
   }

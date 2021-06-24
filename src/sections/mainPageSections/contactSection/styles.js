@@ -15,7 +15,7 @@ export const ContactSection = styled.div`
 `
 
 export const InfoSection = styled.div`
-  max-width: 260px;
+  max-width: 362px;
 
   > * + * {
     margin-top: 40px;
@@ -24,7 +24,6 @@ export const InfoSection = styled.div`
   > * {
     :last-child {
       display: flex;
-      justify-content: space-between;
     }
   }
 `
@@ -32,6 +31,7 @@ export const InfoSection = styled.div`
 export const SocialMediaContainer = styled.div`
   display: flex;
   align-items: center;
+  margin-left: 28px;
 
   > * + * {
     margin-left: 16px;

@@ -8,13 +8,13 @@ export const HeroSection = styled.div`
   background-color: ${mainColors.darkBG};
   > * {
     display: flex;
-    column-gap: 120px;
+    column-gap: 60px;
     align-items: center;
   }
 `
 
 export const IntroText = styled.div`
-  max-width: 50%;
+  max-width: 52%;
   > * + * {
     margin-top: 42px;
   }
@@ -23,5 +23,12 @@ export const IntroText = styled.div`
 export const Buttons = styled.div`
   > * + * {
     margin-left: 24px;
+  }
+`
+
+export const HeroImage = styled.div`
+  flex-grow: 1;
+  > img {
+    //max-width: unset;
   }
 `

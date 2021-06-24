@@ -15,8 +15,7 @@ const LastWorksSection = () => {
         <Styles.InfoSection>
           <Typography size={4} fontWeight={'700'} textColor={'#fff'} variant={'h2'}>Последние наши работы</Typography>
           <Typography variant={'p'}>
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            А еще мы создаем дизайн и проектируем сайты, лендинги, промо-сайты и интернет-магазины.
           </Typography>
 
           <Link href={'/portfolio'}>

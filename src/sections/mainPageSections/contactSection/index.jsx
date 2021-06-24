@@ -17,10 +17,11 @@ const ContactSection = () => {
     <Styles.ContactSection>
       <BaseContainer>
         <Styles.InfoSection>
-          <Typography size={4} fontWeight={'700'} textColor={mainColors.darkBG} variant={'h2'}>Lorem ipsum dolor sit amet</Typography>
+          <Typography size={4} fontWeight={'700'} textColor={mainColors.darkBG} variant={'h2'}>
+            Узнайте стоимость разработки дизайна
+          </Typography>
           <Typography variant={'p'}>
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            Заполние форму и в течении суток мы вам ответим
           </Typography>
           <div>
             <Button>Оставить заявку</Button>

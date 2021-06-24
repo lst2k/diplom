@@ -7,6 +7,8 @@ import Button from '../../../components/Button'
 
 import {mainColors} from '../../../constants/theme'
 
+import heroImage from '../../../images/hero-image.jpg'
+
 
 const HeroSection = () => {
   return (
@@ -14,7 +16,7 @@ const HeroSection = () => {
       <BaseContainer>
         <Styles.IntroText>
           <Typography fontWeight={'700'} size={5} variant={'h1'} textColor={'#fff'}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit sedfd
+            Профессиональная работа с графикой - векторные и растровые макеты
           </Typography>
 
           <Typography variant={'p'}>
@@ -32,9 +34,9 @@ const HeroSection = () => {
           </Styles.Buttons>
         </Styles.IntroText>
 
-        <div>
-
-        </div>
+        <Styles.HeroImage>
+          <img src={heroImage} alt={''} />
+        </Styles.HeroImage>
       </BaseContainer>
     </Styles.HeroSection>
   )
